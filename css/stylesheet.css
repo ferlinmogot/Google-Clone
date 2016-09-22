@@ -1,0 +1,137 @@
+/* Ferlin's Design Exercise: Google Site Design Remake*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: dodgerblue;
+}
+
+nav#header {
+    text-align: right;
+    padding: 15px;
+}
+
+nav#header ul li,
+footer ul li{
+    display: inline;
+    padding: 12px; /* FM Error: forget spacing for text */
+}
+
+button {
+    background: #0073ff;
+    border: #3d95ff;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 15px;  /* FM Error: forget "px" */
+    font-weight: 800;
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+}
+
+
+nav#header ul li{
+    display: inline;
+    padding: 12px; /* FM Error: forget spacing for text */
+}
+
+nav#header ul li a:link, /* FM Error: forget comma */
+nav#header ul li a:visited,
+footer ul li a:link, /* FM Error: forget comma */
+footer ul li a:visited {
+    color: #525252;
+    text-decoration: none;
+}
+
+nav#header ul li a:hover,
+footer ul li a:hover {
+    text-decoration:underline;
+}
+
+nav#header ul li .fa fa-th {
+    font-size: 50px;
+}
+
+#container {
+    width: 480px;
+    margin: 140px auto; /* FM Error combining auto w other margins */
+    text-align: center;
+}
+
+h1#logo {
+    background: url('../img/google.png') no-repeat ;
+    width: 272px;
+    height: 92px;
+    background-size: 100%;
+    text-indent: -9999px;
+    margin: auto;
+}
+
+#logosubtext {
+    text-align: right;
+    width: 350px;
+    margin: auto;
+}
+
+
+input[type="text"] {
+    width: 100%; /* fm error*/
+    font-size: 18px;
+    padding: 5px;
+    min-height: 390;
+    box-sizing: 25px;
+    margin: 15px 0 10px;
+    border: solid 1px #ccc; /* fm error*/
+    
+    color:aqua; 
+}
+
+input[type="text"]:hover {
+    border-color: black; /* fm error*/
+}
+    
+input[type="submit"] {
+    background: #eee ;
+    color: #777;
+    border: solid 1px #ccc ;
+    padding: 10px 15px;
+    margin: 20px 8px 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* FM Error: small ul li. Forget 'li' to display inline*/
+small ul li {
+    display: inline;
+    color: #474747;
+    font-size: 12px;
+    margin: 100px auto; 
+    list-style-type: none;
+    padding: 10px;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:16px;   /* Height of the footer */
+    background:#eee;
+    padding: 10px;    
+}
+
+footer ul li {
+    display: inline;
+}
+
+/* FM Error: dont write the nav ul li id/class. Just write #id(.class)*/
+#clear-fix {
+    float: left;
+}
+
+#right  {
+    float: right;
+}
+
+
